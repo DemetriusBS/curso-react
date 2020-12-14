@@ -11,7 +11,7 @@ const Title = React.createClass({
   },
   render: function () {
     return (
-      <h1> Olá {this.props.name + '' + this.props.lastName}! </h1 >
+      <h1> Olá {this.props.name + '' + this.props.lastName.First + " " + this.props.lastName.Last}! </h1 >
     )
   }
 })
