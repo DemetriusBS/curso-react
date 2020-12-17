@@ -1,8 +1,19 @@
 'use strict'
 
-import React from 'react'
+import React, { Component } from 'react'
 import Title from './title'
 
+class App extends Component {
+  render() {
+    return (
+      <div className='container'>
+        <Title name='Demetrius' />
+      </div>
+    )
+  }
+}
+
+/*
 const App = React.createClass({
   render: function () {
     return <div className='1'>
@@ -10,4 +21,5 @@ const App = React.createClass({
     </div>
   }
 })
+*/
 export default App
