@@ -10,8 +10,4 @@ const Button = ({ children, handleClick, color }) => (
   </button>
 )
 
-Button.defaultProps = {
-  color: 'orange'
-}
-
 export default Button
