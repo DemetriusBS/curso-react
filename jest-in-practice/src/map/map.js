@@ -1,10 +1,13 @@
-var arr = [1, 2, 3]
-console.log(arr)
+const map = (arr = [], func = () => { }) => {
 
-function plusOne(item) {
-    return item + 1
+    if (typeof func !== 'function')
+        throw new TypeError('func is not a function')
+
+    let newArr = []
+
+    for (let i = 0; i < arr.length; i++)
+        newArr.push(func(arr[i], i, arr))
+    return newArr
 }
 
-console.log(arr.map(plusOne))
-
-console.log(arr)
+export default map
