@@ -13,3 +13,6 @@ Button.propTypes ={
 }
 
 export default Button
+
+var i = 0
+console.log(i++)
