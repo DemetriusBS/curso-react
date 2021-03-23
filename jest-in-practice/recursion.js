@@ -6,4 +6,4 @@ const sum = (arr) => {
     return head + sum(tail)
 }
 
-console.log(sum([1, 2, 3, 4]))
+console.log(sum([1, 2, 3]))
